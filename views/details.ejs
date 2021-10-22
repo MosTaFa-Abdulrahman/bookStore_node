@@ -1,0 +1,27 @@
+<%- include('parts/header.ejs') %>
+
+    <br><br><br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="/uploads/<%= book.image %> " alt="">
+            </div>
+            <div class="col">
+                <h2>
+                    <%= book.title %>
+                </h2>
+                <h5>
+                    <%= book.author %>
+                </h5>
+                <span>$<%= book.price %> </span>
+                <p>
+                    <%= book.description %>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <%- include('parts/footer.ejs') %>
